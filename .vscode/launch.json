@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - Mcdonald",
+            "request": "launch",
+            "mainClass": "Mcdonald",
+            "projectName": "BaekJoon_c3f55e00"
+        },
+        {
             "name": "gcc.exe - 활성 파일 빌드 및 디버그",
             "type": "cppdbg",
             "request": "launch",
@@ -15,6 +22,7 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
+            "jdkpath": "C:\\Program Files\\Java\\jdk-13.0.2",
             "miDebuggerPath": "C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\gdb.exe",
             "setupCommands": [
                 {
