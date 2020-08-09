@@ -39,7 +39,7 @@ public class Mcdonald {
         setM = setM - sale ;
 
         System.out.println(setM);
-        
+        //스캐너 종료
         sc.close();
     }
     
