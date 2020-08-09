@@ -19,7 +19,7 @@ public class Mcdonald {
         {
             drk[i] = sc.nextInt();
         }
-        //버거 최솟값 위해 삼항연산
+        //버거 최솟값 세 수 비교
         if(bur[0]<bur[1] && bur[0]<bur[2])  
         {
             setM =bur[0];
