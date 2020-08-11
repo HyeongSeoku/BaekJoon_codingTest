@@ -35,6 +35,7 @@ public class StarDraw3 {
                 }
             }
             System.out.println();
+           
         }
         sc.close();
     }
