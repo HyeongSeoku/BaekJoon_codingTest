@@ -15,5 +15,7 @@ public class Count11720 {
             result+=line.charAt(i) -'0';        //charAt(i) : i번째 인덱스 
         }
         System.out.println(result);
+
+        sc.close();
     }
 }
