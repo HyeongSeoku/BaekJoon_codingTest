@@ -5,7 +5,6 @@ public class Ex3052 {
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
-        int num[] = new int[10];
         HashSet<Integer> hash = new HashSet<Integer>();
 
         for(int i=0;i<10;++i)
