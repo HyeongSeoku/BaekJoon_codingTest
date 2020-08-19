@@ -1,3 +1,4 @@
+package 배열_1;
 import java.util.Scanner;
 import java.util.Arrays;
 public class Ex10818 {

@@ -1,3 +1,4 @@
+package 배열_1;
 import java.util.Scanner;
 public class Ex4344 {
     public static void main(String args[])
@@ -28,6 +29,7 @@ public class Ex4344 {
             System.out.println("%");
         
         }
+        sc.close();
     }
     
 }
