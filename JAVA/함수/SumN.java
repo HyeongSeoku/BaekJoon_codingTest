@@ -1,3 +1,4 @@
+package 함수;
 public class SumN {
     long sum(int[] a)
     {
@@ -9,5 +10,5 @@ public class SumN {
         return ans;
     }
 
-    
+    //15596
 }
