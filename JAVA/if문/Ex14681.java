@@ -1,3 +1,4 @@
+package 배열_1;
 package if문;
 import java.util.Scanner;
 
@@ -20,6 +21,7 @@ public class Ex14681 {
         {
             System.out.println("4");
         }            
+        sc.close();
     }
     
 }

@@ -17,6 +17,7 @@ public class Ex1330 {
         {
             System.out.println("<");
         }
+        sc.close();
         
     }
     

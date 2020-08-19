@@ -12,6 +12,7 @@ public class Ex2753 {
         }else{
             System.out.println("0");
         }
+        sc.close();
     }
     
 }
