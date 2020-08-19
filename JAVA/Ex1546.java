@@ -1,5 +1,6 @@
 import java.util.Scanner;
-import java.util.Arrays;
+
+
 public class Ex1546 {
     public static void main(String args[])
     {

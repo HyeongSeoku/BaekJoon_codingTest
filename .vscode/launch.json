@@ -6,10 +6,17 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Mcdonald",
+            "name": "CodeLens (Launch) - StarDraw3",
             "request": "launch",
-            "mainClass": "Mcdonald",
+            "mainClass": "StarDraw3",
             "projectName": "BaekJoon_c3f55e00"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) -Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "jdkpath": "C:\\Program Files\\Java\\jdk-13.0.2"
         },
         {
             "name": "gcc.exe - 활성 파일 빌드 및 디버그",
@@ -22,7 +29,6 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "jdkpath": "C:\\Program Files\\Java\\jdk-13.0.2",
             "miDebuggerPath": "C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\gdb.exe",
             "setupCommands": [
                 {
