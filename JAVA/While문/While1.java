@@ -1,3 +1,4 @@
+package While문;
 import java.util.Scanner;
 
 public class While1{
@@ -14,6 +15,6 @@ public class While1{
             System.out.println(first+second);
         }
         sc.close();
-        
+        //10952
     }
 }

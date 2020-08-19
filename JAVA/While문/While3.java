@@ -1,3 +1,4 @@
+package While문;
 import java.util.Scanner;
 
 public class While3 {
