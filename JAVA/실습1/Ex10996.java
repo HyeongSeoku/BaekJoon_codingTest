@@ -6,7 +6,7 @@ public class Ex10996 {
     {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt(); //입력 받는수
-
+        sc.close();
         for(int i=1;i<=N*2;++i)
         {
             if(i%2==1)      //홀수행
