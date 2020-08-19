@@ -1,5 +1,5 @@
 import java.util.Scanner;
- 
+ //OX 퀴즈
 public class Ex8958 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
