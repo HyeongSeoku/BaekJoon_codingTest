@@ -1,3 +1,4 @@
+package 실습1;
 import java.util.Scanner;
 
 public class StarDraw3 {
