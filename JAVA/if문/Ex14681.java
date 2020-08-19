@@ -1,4 +1,3 @@
-package 배열_1;
 package if문;
 import java.util.Scanner;
 
