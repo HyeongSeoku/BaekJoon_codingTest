@@ -18,7 +18,7 @@ public class Ex1065 {
             {
                 result+=checkHanNumber(i);
             }
-            
+            if(N==1000) result --;
             System.out.println(result);
         }
     }
