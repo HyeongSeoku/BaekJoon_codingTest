@@ -9,6 +9,7 @@ public class Ex2675 {
         {
             int rotate = sc.nextInt();
             String str = sc.next();
+            sc.close();
             for(int j=0;j<str.length();++j)
             {
                 for(int z=0;z<rotate;++z)       //rotate번 반복
