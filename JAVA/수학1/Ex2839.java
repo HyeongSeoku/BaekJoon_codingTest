@@ -6,6 +6,7 @@ public class Ex2839 {
     {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
+        sc.close();
         while(N>0)
         {
              if(N%5==0)
