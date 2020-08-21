@@ -13,8 +13,8 @@ public class Ex2292 {
     private static int Room(int n)
     {
         int RoomN = 1;
-        int addN = 0;
-        int res = 0;
+        int addN = 6;
+        int res = 1;
         while(true)
         {
             if(n<=RoomN)
