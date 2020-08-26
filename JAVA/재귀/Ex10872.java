@@ -5,6 +5,7 @@ public class Ex10872 {
     {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
+        sc.close();
         int result = factorial(N);
         System.out.println(result);
     }
