@@ -1,5 +1,5 @@
 package 문자열;
-import java.util.Scanner;
+import java.util.*;
 public class Ex2941 {
     public static void main(String args[])
     {
@@ -7,7 +7,7 @@ public class Ex2941 {
         String [] Croatia ={"c=","c-","dz=","d-","lj","nj","s=","z="};  //크로아티아 알파벳
         String str =sc.nextLine();
         sc.close();
-        for(int i=0;i<str.length();++i)
+        for(int i=0;i<8;++i)
         {
             str = str.replace(Croatia[i], "*");  //str 중 Croatia에 해당되는 문자열을 전부 *로 변경
         }
