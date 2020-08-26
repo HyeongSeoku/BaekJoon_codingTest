@@ -8,7 +8,7 @@ public class Ex5622 {
         String input = sc.nextLine();
         sc.close();
         int result =0;
-        input = input.toUpperCase();
+        input = input.toUpperCase();    //소문자 입력시에도 대문자로 변환
 
         for(int i=0;i<input.length();++i)
         {
