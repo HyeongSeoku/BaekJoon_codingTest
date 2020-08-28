@@ -16,7 +16,7 @@ public class Ex1193 {
         {   
             
             //짝수일때
-            if(N%2== 0)
+            if(cross_cnt%2== 0)
             {                                                //  ↓ 0이됨 
                 //분자: N-이전 대각선 합 , 분모 : 대각선 수 -(N - 이전대각선 합 -1)
                 System.out.print((N-pre_cnt_sum)+ "/" +(cross_cnt-(N-pre_cnt_sum-1)));
