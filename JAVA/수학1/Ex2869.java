@@ -7,9 +7,9 @@ public class Ex2869 {
         //높이 V 달팽이 A미터 낮 올라감 밤에 B미터 미끄러짐
         // 정상에 오른후는 미끄러지지 않음
         Scanner sc = new Scanner(System.in);
-        int V = sc.nextInt();
-        int A =sc.nextInt();
+        int A = sc.nextInt();
         int B =sc.nextInt();
+        int V =sc.nextInt();
         sc.close();
         //===========입력문==========
         int count = 0;  //걸리는 날짜
@@ -20,6 +20,7 @@ public class Ex2869 {
             if(sum==V)
             {
                 System.out.println(count);
+                break;
             }
             //
             else{
