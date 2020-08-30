@@ -13,9 +13,9 @@ public class Ex10250 {
             int N = sc.nextInt();   //몇번째 손님
 
             //========입력문=============
-            sc.close();
-
             
+
+
             //N%H == 0 일경우에만 예외가 발생.
             if(N%H == 0)
             {
@@ -28,5 +28,6 @@ public class Ex10250 {
             }
             
         }
-        
+        sc.close();     //for문 안에 둘시 입력이 남았는데 스캐너 닫아버림.
     }
+}
