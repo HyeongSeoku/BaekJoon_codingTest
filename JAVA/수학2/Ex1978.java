@@ -7,17 +7,19 @@ public class Ex1978 {
         Scanner sc = new Scanner(System.in);
 
         int N = sc.nextInt();       //입력할 숫자의 개수
-        
+        int arr[] = new int[N+1];   //입력받을 숫자 배열
         int sosuCount=0,count = 0;              //소수의 개수
 
         for(int i=1; i<=N; ++i)
         {
-            int num = sc.nextInt();
-            for(int j=1; j<=num; ++j)
+            arr[i] = sc.nextInt();  
+            for(int j=1; j<=arr[i]; ++j)
             {
+                sosuCount = 0;      //소수카운트를 0으로 다시 초기화
+                
                 //입력받은 수를 1~자기자신(arr[i])까지 나눴을때 
                 //나머지가 0이면 카운트++
-                if(num%j == 0)
+                if(arr[i]%j == 0)
                 {
                     sosuCount++;
                 }
