@@ -13,10 +13,11 @@ public class Ex1978 {
         for(int i=1; i<=N; ++i)
         {
             arr[i] = sc.nextInt();  
+            sosuCount = 0;      //소수카운트를 0으로 다시 초기화
             for(int j=1; j<=arr[i]; ++j)
             {
-                sosuCount = 0;      //소수카운트를 0으로 다시 초기화
-                
+              
+
                 //입력받은 수를 1~자기자신(arr[i])까지 나눴을때 
                 //나머지가 0이면 카운트++
                 if(arr[i]%j == 0)
