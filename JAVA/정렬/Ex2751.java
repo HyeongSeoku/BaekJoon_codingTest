@@ -1,7 +1,9 @@
 package 정렬;
 import java.util.*;
 public class Ex2751 {
-    Scanner sc = new Scanner(System.in);
+	public static void main(String args[])
+	{
+    	Scanner sc = new Scanner(System.in);
 		StringBuilder sb = new StringBuilder();
 		
 		int N = sc.nextInt();
@@ -18,6 +20,7 @@ public class Ex2751 {
 		for(int value : list) {
 			sb.append(value).append('\n');
 		}
+		sc.close();
 		System.out.println(sb);
 	}
 }
