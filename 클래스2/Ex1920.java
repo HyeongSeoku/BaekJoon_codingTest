@@ -1,5 +1,6 @@
 package 클래스2;
 import java.util.Scanner;
+import java.util.Arrays;
 public class Ex1920 {
     public static void main(String args[])
     {
@@ -11,29 +12,36 @@ public class Ex1920 {
         {
             arr_N[i] = sc.nextInt();
         }
+        //이진검색을 위해 배열 오름차순 정렬
+        Arrays.sort(arr_N);
+        
         int M = sc.nextInt();
-        int arr_M[] = new int [M];
-        for(int i =0; i<M; ++i)
+        for(int j=0; j<M; ++j)
         {
-            arr_M[i] = sc.nextInt(); 
+            System.out.println(BinarySearch(arr_N, sc.nextInt()));
+            
         }
-        for(int i=0; i<M; ++i)
+        
+    }
+    public static int BinarySearch(int arr[],int num)
+    {
+        int high = arr.length -1 , middle = 0 , low =0 ;
+
+        while(low<=high)
         {
-            boolean check = false;
-            for(int j =0; j<N; j++)
+            middle = (high + low) /2 ;
+
+            if(arr[middle]==num)
             {
-                if(arr_M[i]==arr_N[j])
-                {
-                    check = true;
-                }
-            }
-            if(check)
+                return 1;
+            }else if(arr[middle]>num)
             {
-                System.out.println("1");
+                high = middle -1 ;
+            }else
+            {
+                low = middle + 1;
             }
-            else
-            System.out.println("0");
         }
-    
+        return 0;
     }
 }
