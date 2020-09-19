@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import java.io.IOException;
- 
+import java.util.Scanner;
 public class Ex1018 {
  
 	public static boolean[][] arr;
