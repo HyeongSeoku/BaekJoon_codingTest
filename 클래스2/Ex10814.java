@@ -23,13 +23,14 @@ public class Ex10814 {
             @Override
             public int compare(String[] s1, String[] s2){
                 return Integer.parseInt(s1[0])-Integer.parseInt(s2[0]);
-            
+            }
+        });
 
             for(int i=0; i<N; ++i)
             {
-                System.out.println(arr[i][0]+""+arr[i][1]);
+                System.out.println(arr[i][0]+" "+arr[i][1]);
             }
-        });
+       
         }
     }
-}
+
