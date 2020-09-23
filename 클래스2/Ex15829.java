@@ -8,7 +8,7 @@ public class Ex15829 {
     
         Scanner sc = new Scanner(System.in);
         int L = sc.nextInt();
-        String str = sc.next();;
+        String str = sc.next();
         String [] word = new String[L] ;
         word =str.split("");
         int result = 0;
