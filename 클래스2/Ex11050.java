@@ -12,11 +12,11 @@ public class Ex11050 {
     }
     public static int factorial(int n)
     {
-        if(n <= 1)
+        int num = 1;
+        for(int i =n; i>=1; i--)
         {
-            return n;
-        }else{
-           return factorial(n-1)*n;
+            num*=i;
         }
+        return num;
     }
 }
