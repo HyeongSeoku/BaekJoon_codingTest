@@ -6,7 +6,7 @@ public class Ex10869 {
         Scanner sc = new Scanner(System.in);
 
         int num1 = sc.nextInt() ,num2 =sc.nextInt();
-
+        sc.close();
         System.out.println(num1+num2);  //덧셈
         System.out.println(num1-num2);  //뺄셈
         System.out.println(num1*num2);  //곱셈
