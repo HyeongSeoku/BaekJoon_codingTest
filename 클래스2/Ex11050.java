@@ -9,6 +9,7 @@ public class Ex11050 {
         result = factorial(N)/(factorial(K)*factorial(N-K));
         
         System.out.println(result);
+        sc.close();
     }
     public static int factorial(int n)
     {
