@@ -14,5 +14,6 @@ public class Ex2438 {
             }
                 System.out.println();
         }
+        sc.close();
     }
 }
