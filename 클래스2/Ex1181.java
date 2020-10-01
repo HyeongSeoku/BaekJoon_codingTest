@@ -37,5 +37,6 @@ public class Ex1181 {
                 System.out.println(arr[i]);
             }
         }
+        sc.close();
     }
 }
