@@ -30,7 +30,7 @@ public class Ex10814 {
             {
                 System.out.println(arr[i][0]+" "+arr[i][1]);
             }
-       
+            sc.close();
         }
     }
 
