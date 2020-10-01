@@ -8,6 +8,7 @@ public class Ex2164 {
     {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
+        sc.close();
         Queue <Integer> q = new LinkedList<Integer>();
         for(int i=1; i<=N; ++i)
         {
