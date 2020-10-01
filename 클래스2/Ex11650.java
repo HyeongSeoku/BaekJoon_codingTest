@@ -14,6 +14,7 @@ public class Ex11650 {
             arr[i][0] = sc.nextInt();
             arr[i][1] = sc.nextInt();
         }
+        sc.close();
         Arrays.sort(arr,(e1,e2)->{
             if(e1[0]==e2[0])
             {
