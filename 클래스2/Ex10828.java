@@ -5,7 +5,7 @@ public class Ex10828 {
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
-        Stack<Integer> stack = new Stack<>();
+        Stack<Integer> stack = new Stack<Integer>();
 
         int num = sc.nextInt();
         for(int i=0 ; i<num; ++i)
