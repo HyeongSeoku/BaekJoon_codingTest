@@ -25,6 +25,5 @@ public class Ex10828 {
                 System.out.println(stack.isEmpty()? -1:stack.peek());
             }
         }
-        sc.close();
     }
 }
