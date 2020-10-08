@@ -52,3 +52,4 @@ public class Ex1966 {
             System.out.println(st);
     }
 }
+//실패 2020.10.08
