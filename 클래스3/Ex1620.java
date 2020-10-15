@@ -13,11 +13,11 @@ public class Ex1620 {
         int N =Integer.parseInt(firstLine[0]);
         int M =Integer.parseInt(firstLine[1]);
 
-        HashMap<String , Integer> nameMap = new HashMap<String, Integer>()
+        HashMap<String , Integer> nameMap = new HashMap<String, Integer>();
         String nameArr[] = new String[N+1];
         StringBuilder st = new StringBuilder();
 
-        for(int i=0;i<N; ++i)
+        for(int i=1;i<=N; ++i)
         {
             String Pkname = br.readLine();
             nameMap.put(Pkname,i);
