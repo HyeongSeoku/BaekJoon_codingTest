@@ -11,7 +11,7 @@ public class Ex1003 {
   
         for(int i=0;i<T;++i)
         {
-            zeroCnt = 0;
+            zeroCnt = 0;    //케이스마다 초기화 해주기 위해
             oneCnt = 0;
             int N = sc.nextInt();
 
