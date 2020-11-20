@@ -2,13 +2,14 @@ package 클래스2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-
 import java.io.InputStreamReader;
+import java.util.HashMap;
 
 
 public class Ex18111 {
     // 집터 => 2차원 배열
-    // 인벤토리 => 
+    // 땅 높이 => 카운트 변수 (최대 256)
+    
     public static void main(String[] args)throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String firstLine[]  = br.readLine().split(" ");
@@ -18,6 +19,9 @@ public class Ex18111 {
         int GroundHeight[][] = new int[N][M];
 
         int Frequency[] = new int [256];
+        HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+
+        int Hmin = 987654321, Hmax = -1;
 
         for(int i=0; i<N; ++i)
         {
@@ -29,8 +33,12 @@ public class Ex18111 {
                 GroundHeight[i][j] = Integer.parseInt(InputBlock[j]);
                 count = GroundHeight[i][j];
                 Frequency[count]++;
+                
             }
+            
         }
+
+
         //빈도 출력 확인
         for(int i=0;i<256; ++i)
         {
@@ -38,9 +46,12 @@ public class Ex18111 {
             {
                 continue;
             }
-            System.out.print(i+": "+ Frequency[i]+" ");
+            Hmin = Math.min(Frequency[i],Hmin);
+            Hmax = Math.max(Frequency[i],Hmax);
+            map.put(i,Frequency[i]);
         }
-        
+        System.out.println(map);
+        System.out.println(Hmin+" "+Hmax);
     }
     
 }
