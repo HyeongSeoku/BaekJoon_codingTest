@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class Ex10773 {
-    //합 최대 : 2^31 -1 => long 사용
+    //합 최대 : 2^31 -1 
     public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
        int num = sc.nextInt();

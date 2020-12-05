@@ -1,4 +1,4 @@
-package 배열_1;
+package JAVA.배열_1;
 import java.util.*;
 public class Ex2562 {
     public static void main(String args[])

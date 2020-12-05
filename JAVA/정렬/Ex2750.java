@@ -1,4 +1,4 @@
-package 정렬;
+package JAVA.정렬;
 import java.util.*;
 public class Ex2750 {
     public static void main(String args[])

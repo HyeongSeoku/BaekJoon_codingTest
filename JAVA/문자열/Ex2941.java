@@ -1,4 +1,4 @@
-package 문자열;
+package JAVA.문자열;
 import java.util.*;
 public class Ex2941 {
     public static void main(String args[])

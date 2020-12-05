@@ -1,4 +1,4 @@
-package 함수;
+package JAVA.함수;
 import java.util.Scanner;
 
 public class Ex1065 {

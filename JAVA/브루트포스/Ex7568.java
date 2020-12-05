@@ -1,4 +1,4 @@
-package 브루트포스;
+package JAVA.브루트포스;
 import java.util.Scanner;
 public class Ex7568 {
     public static void main(String args[])

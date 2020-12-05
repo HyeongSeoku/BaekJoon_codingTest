@@ -1,4 +1,4 @@
-package While문;
+package JAVA.While문;
 import java.util.Scanner;
 
 public class While1{

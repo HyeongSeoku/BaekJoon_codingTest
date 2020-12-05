@@ -1,4 +1,4 @@
-package 실습1;
+package JAVA.실습1;
 import java.util.Arrays;
 import java.util.Scanner;
 

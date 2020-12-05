@@ -1,4 +1,4 @@
-package 수학2;
+package JAVA.수학2;
 import java.util.Scanner;
 public class Ex1929 {
     public static boolean[] prime;

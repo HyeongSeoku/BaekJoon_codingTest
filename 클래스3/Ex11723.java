@@ -8,7 +8,7 @@ public class Ex11723 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder st = new StringBuilder();
         int M =Integer.parseInt(br.readLine());
-        int arr[] = new int [M];
+
         for(int i=0; i<M; ++i)
         {
             String secondLine[] = br.readLine().split(" ");

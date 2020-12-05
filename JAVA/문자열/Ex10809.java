@@ -1,4 +1,4 @@
-package 문자열;
+package JAVA.문자열;
 import java.util.Scanner;
 
 public class Ex10809 {

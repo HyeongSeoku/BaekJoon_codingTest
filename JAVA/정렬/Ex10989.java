@@ -1,4 +1,4 @@
-package 정렬;
+package JAVA.정렬;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;

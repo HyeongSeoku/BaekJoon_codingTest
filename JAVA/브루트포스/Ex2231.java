@@ -1,4 +1,4 @@
-package 브루트포스;
+package JAVA.브루트포스;
 
 import java.util.Scanner;
 

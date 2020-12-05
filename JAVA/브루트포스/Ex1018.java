@@ -1,8 +1,5 @@
-package 브루트포스;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
-import java.io.IOException;
+package JAVA.브루트포스;
+
 import java.util.Scanner;
 public class Ex1018 {
  
@@ -51,6 +48,7 @@ public class Ex1018 {
 			}
 		}
 		System.out.println(min);
+		in.close();
 	}
  
 	

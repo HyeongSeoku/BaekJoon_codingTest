@@ -1,4 +1,4 @@
-package 재귀;
+package JAVA.재귀;
 import java.util.Scanner;
 public class Ex10872 {
     public static void main(String args[])

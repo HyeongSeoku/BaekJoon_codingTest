@@ -1,4 +1,4 @@
-package if문;
+package JAVA.if문;
 import java.util.Scanner;
 
 public class Ex1330 {

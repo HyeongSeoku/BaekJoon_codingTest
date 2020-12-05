@@ -1,4 +1,4 @@
-package 함수;
+package JAVA.함수;
 public class SelfN {
 
  public static void main(String arags[])

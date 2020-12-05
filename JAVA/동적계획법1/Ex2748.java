@@ -1,4 +1,4 @@
-package 동적계획법1;
+package  JAVA.동적계획법1 ;
 import java.util.Scanner;
 public class Ex2748 {
     public static void main(String[] args) {

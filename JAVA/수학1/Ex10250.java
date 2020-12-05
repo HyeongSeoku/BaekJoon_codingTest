@@ -1,4 +1,4 @@
-package 수학1;
+package JAVA.수학1;
 import java.util.Scanner;
 public class Ex10250 {
     public static void main(String args[])

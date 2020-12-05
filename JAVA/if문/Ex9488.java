@@ -1,4 +1,4 @@
-package if문;
+package JAVA.if문;
 import java.util.Scanner;
 public class Ex9488 {
     public static void main(String args[])
