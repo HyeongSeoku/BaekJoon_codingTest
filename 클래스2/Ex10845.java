@@ -8,16 +8,18 @@ public class Ex10845 {
         Scanner sc =new Scanner(System.in);
         int N = sc.nextInt();
         sc.nextLine();
-
-        Queue q = new LinkedList<Integer>();
+        StringBuilder st = new StringBuilder(); //결과 출력할 문자열 담을 빌더
+        Queue<Integer> q = new LinkedList<Integer>();
         int x ;
         int last =0 ;
+        q.clear();
         for(int i=0;i<N; ++i)
         {
             String str = sc.nextLine();
 
             String s[] = str.split(" "); //공백으로 문자열 구분
             String cmd = s[0];
+           
             if(cmd.equals("push")){
                 x = Integer.parseInt(s[1]);
                 last = x;
@@ -26,45 +28,56 @@ public class Ex10845 {
 
             else if(cmd.equals("pop")){
                 if(q.isEmpty()){
-                    System.out.println("-1");
+                    st.append("-1");
+                    st.append("\n");
                 }else{
-                    System.out.println(q.poll());
+                    st.append(q.poll());
+                    st.append("\n");
                 }
             }  //pop 문
             
             else if(cmd.equals("size")){
                 if(q.isEmpty()){
-                    System.out.println("0");
+                    st.append("0");
+                    st.append("\n");
                 }else{
-                    System.out.println(q.size());
+                    st.append(q.size());
+                    st.append("\n");
                 }
             }  //size 문
 
             else if(cmd.equals("empty")){
                 if(q.isEmpty()){
-                    System.out.println("1");
+                    st.append("1");
+                    st.append("\n");
                 }else{
-                    System.out.println("0");
+                    st.append("0");
+                    st.append("\n");
                 }
             }  //empty 문
 
             else if(cmd.equals("front")){
                 if(q.isEmpty()){
-                    System.out.println("-1");
+                    st.append("-1");
+                    st.append("\n");
                 }else{
-                    System.out.println(last);
+                    st.append(q.peek());
+                    st.append("\n");
                 }
             }  //front 문
 
             else if(cmd.equals("back")){
                 if(q.isEmpty()){
-                    System.out.println("-1");
+                    st.append("-1");
+                    st.append("\n");
                 }else{
-                    System.out.println(q.peek());
+                    st.append(last);
+                    st.append("\n");
                 }
             }  //back 문
 
         }  //for문
         
+        System.out.println(st);
     }
 }
