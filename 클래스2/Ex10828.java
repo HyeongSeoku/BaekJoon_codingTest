@@ -6,7 +6,7 @@ public class Ex10828 {
     {
         Scanner sc = new Scanner(System.in);
         Stack<Integer> stack = new Stack<Integer>();
-
+        StringBuilder st  = new StringBuilder();
         int num = sc.nextInt();
         for(int i=0 ; i<num; ++i)
         {
@@ -16,14 +16,20 @@ public class Ex10828 {
                 stack.push(data);
             }
             else if(command.equals("pop")){
-                System.out.println(stack.isEmpty()? -1:stack.pop());
+                st.append(stack.isEmpty()? -1:stack.pop());
+                st.append("\n");
             }else if(command.equals("size")){
-                System.out.println(stack.size());
+                st.append(stack.size());
+                st.append("\n");
             }else if(command.equals("empty")){
-                System.out.println(stack.isEmpty()? 1:0);
+                st.append(stack.isEmpty()? 1:0);
+                st.append("\n");
             }else if(command.equals("top")){
-                System.out.println(stack.isEmpty()? -1:stack.peek());
+                st.append(stack.isEmpty()? -1:stack.peek());
+                st.append("\n");
             }
         }
+        System.out.println(st);
     }
 }
+//2020.12.28 시간 초과 오류 => StringBuilder 사용
