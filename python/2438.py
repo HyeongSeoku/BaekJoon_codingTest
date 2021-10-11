@@ -6,5 +6,5 @@
 
 N = int(input())
 
-for i in range(1, N+1):
+for i in range(1, N+1):  # 0일때도 생각해야함 range(1:N)으로 설정해야함
     print('*'*i)
