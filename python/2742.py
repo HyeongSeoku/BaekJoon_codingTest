@@ -9,6 +9,6 @@ N = int(input())
 for i in range(N, 0, -1):
     print(i)
 '''
-    reversed()를 사용한 방식
+    #reversed()를 사용한 방식
     for i in reversed(range(N))
 '''
