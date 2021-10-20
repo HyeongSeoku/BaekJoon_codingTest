@@ -14,6 +14,7 @@ result = []  # 빼준 사람들 담을 리스트
 
 print("<", end="")
 for i in range(n):
+    # deque.rotate(num): 데크를 num만큼 회전한다(양수면 오른쪽, 음수면 왼쪽).
     circle.rotate(1-k)
 
     if i != n-1:
