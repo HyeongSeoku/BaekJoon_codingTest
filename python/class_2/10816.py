@@ -3,25 +3,29 @@
     문제 번호 : 10816
     문제 링크 : https://www.acmicpc.net/problem/10816
 '''
-import sys;
+import sys
 
-read = sys.stdin.readline;
+read = sys.stdin.readline
 
 n = int(read())
+cardList = list(map(int, read().split(" ")))
 
-for i in range(n):
-    cardList = list(map(int,read().rstrip().split()))
+dict1 = dict()
+
+for i in cardList:
+    count = 0
+    if i in dict1:
+        # 해당 카드가 있으면 증가
+        dict1[i] += 1
+        # 해당 카드 없으면 체크
+    else:
+        dict1[i] = 1
 
 m = int(read())
+targetList = list(map(int, read().split(" ")))
 
-for _ in range(m):
-    targetList = list(map(int,read().rstrip().split()))
-
-print(cardList,targetList)
-# for target in targetList:
-    
-#     count = 0
-#     for card in cardList:
-#         if target == card:
-#             count +=1;
-#         print(count)
+for i in targetList:
+    if i in dict1:
+        print(dict1[i], end=" ")
+    else:
+        print(0, end=" ")
