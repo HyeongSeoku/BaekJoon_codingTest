@@ -12,5 +12,5 @@ N, X = map(int, read().split())
 nums = list(map(int, read().split()))
 
 for num in nums:
-    if num > X:
+    if num < X:
         print(num, end=" ")
