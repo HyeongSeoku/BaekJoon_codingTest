@@ -5,6 +5,52 @@
 '''
 #완전 탐색 문제
 
+import sys
+from collections import Counter;
+
+read = sys.stdin.readline;
+
+def make_land(height):
+    sec =0
+    for key in land:
+        if key > height:
+            #블록을 제거 하는 경우
+            sec += (key-height) *2 *land[key]
+        elif key < height:
+            #블록을 더하는 경우
+            sec += (height - key) * land[key]
+    return sec
+
+n,m,b = map(int,read().split());
+land = [];
+
+for _ in range(n):
+    land += map(int,read().split())
+
+_sum , _len = sum(land), n*m;
+land = dict(Counter(land))
+height,min_sec = 0,1000000000
+
+for i in range(257):
+    if _len *i <= _sum + b:
+        sec = make_land(i)
+        if sec <= min_sec:
+            height = i;
+            min_sec = sec;
+
+print(min_sec,height);
+
+
+
+
+
+
+
+
+
+'''
+#시간 초과
+
 import sys;
 read = sys.stdin.readline;
 
@@ -36,3 +82,4 @@ for curH in range(257):
         height = curH   #높이 재할당 (curH가 0부터 257까지 증가하므로 높이가 높은 갚으로 바뀜)
 
 print(time,height)
+'''
