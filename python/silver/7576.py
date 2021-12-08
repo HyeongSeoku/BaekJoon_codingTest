@@ -33,6 +33,7 @@ for i in range(n):
         if field[i][j] == 1:
             que.append([i,j])
 
+
 def bfs():
     #큐가 빌때까지
     while que:
