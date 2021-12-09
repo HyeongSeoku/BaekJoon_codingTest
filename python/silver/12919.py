@@ -20,7 +20,7 @@ def translate(target):
     if len(target) == len(s):
         if target == s:
             print(1)
-            exit(0) 
+            exit(0) #종료
         return
     if target[0] == 'B':
         target = target[::-1]
@@ -37,9 +37,9 @@ def translate(target):
 
         #백트래킹 위한 초기화
         target.append('A')
-        
+
 s,t = [list(read().rstrip()) for _ in range(2)]
 
 
 translate(t)
-print (s,t)
+print(0)
