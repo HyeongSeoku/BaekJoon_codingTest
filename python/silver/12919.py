@@ -5,7 +5,7 @@
 '''
 
 import sys
-read = sys.stdin.readline;
+read = sys.stdin.readline
 
 '''
 s -> t 되는 경우
@@ -16,29 +16,32 @@ s -> t 되는 경우
 '''
 
 #DFS , BackTracking
+
+
 def translate(target):
     if len(target) == len(s):
         if target == s:
             print(1)
-            exit(0) #종료
+            exit(0)  # 종료
         return
     if target[0] == 'B':
         target = target[::-1]
         target.pop()
         translate(target)
 
-        #백트래킹 위한 초기화
+        # 백트래킹 위한 초기화
         target.append('B')
         target = target[::-1]
 
-    if target[-1] == 'A':    
+    if target[-1] == 'A':
         target.pop()
         translate(target)
 
-        #백트래킹 위한 초기화
+        # 백트래킹 위한 초기화
         target.append('A')
 
-s,t = [list(read().rstrip()) for _ in range(2)]
+
+s, t = [list(read().rstrip()) for _ in range(2)]
 
 
 translate(t)
