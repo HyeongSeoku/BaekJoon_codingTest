@@ -13,9 +13,7 @@ nums = [int(read()) for _ in range(N)]  # 알파벳과 대응되는 값
 
 stack = []  # 피연산자를 담을 스택
 
-print(nums)
 for i in sen:
-    print(i)
     # 피연산자인 경우
     if 'A' <= i <= 'Z':
         stack.append(nums[ord(i)-ord('A')])  # 스택에 피연산자 넣음 (숫자로 변환)
