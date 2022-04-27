@@ -14,7 +14,6 @@ const readFileSyncAddress = "example.txt";
 //split(/\+|\-/);"
 const input = fs.readFileSync(readFileSyncAddress).toString();
 let list = input.split("-");
-
 solution(list);
 
 function solution(list) {
@@ -23,6 +22,7 @@ function solution(list) {
   for (i of list) {
     let cnt = 0;
     let s = i.split("+"); //+로 분리후 cnt에 값을 더한후 tmp에 삽입
+    console.log(s);
     for (j of s) {
       cnt += parseInt(j);
     }
