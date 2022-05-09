@@ -20,13 +20,13 @@ const input = fs
 
 const [N, ...arr] = input;
 
+console.log(arr);
 let rgb = arr.map((i) => i.split(" ").map((item) => +item));
 
 solution(+N, rgb);
 
 function solution(n, list) {
   const DP = list;
-
   for (let i = 1; i < n; i++) {
     DP[i][0] += Math.min(DP[i - 1][1], DP[i - 1][2]);
     DP[i][1] += Math.min(DP[i - 1][0], DP[i - 1][2]);
