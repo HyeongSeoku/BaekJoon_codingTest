@@ -27,9 +27,9 @@ function solution(N, S, arr) {
 
   while (startIndex !== arr.length) {
     let curlength = 0;
-    let sum = 0;
+    let curSum = 0;
     for (let i = startIndex; i < arr.length; i++) {
-      if (S <= sum) {
+      if (S <= curSum) {
         if (answer > curlength || !answer) {
           answer = curlength;
         }
@@ -38,10 +38,13 @@ function solution(N, S, arr) {
       if (answer && curlength > answer) {
         break;
       }
-      sum += arr[i];
+      curSum += arr[i];
       curlength += 1;
     }
     startIndex += 1;
+    if ((answer > curlength || !answer) && curSum >= S) {
+      answer = curlength;
+    }
   }
 
   console.log(answer);
