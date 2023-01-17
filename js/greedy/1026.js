@@ -20,7 +20,9 @@ const input = fs
 
 const [N, ...arr] = input;
 
-const [A, B] = arr.map((i) => i.split(" ").map((i) => +i));
+const [A, B] = arr.map((item) =>
+  item.split(" ").map((itemNumber) => +itemNumber)
+);
 
 solution(N, A, B);
 
@@ -32,5 +34,6 @@ function solution(n, listA, listB) {
   for (let i = 0; i < n; i++) {
     answer += listA[i] * listB[i];
   }
+
   console.log(answer);
 }
