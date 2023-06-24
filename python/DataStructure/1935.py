@@ -16,7 +16,7 @@ stack = []  # 피연산자를 담을 스택
 for i in sen:
     # 피연산자인 경우
     if 'A' <= i <= 'Z':
-        stack.append(nums[ord(i)-ord('A')])  # 스택에 피연산자 넣음 (숫자로 변환)
+        stack.append(nums[ord(i) - ord('A')])  # 스택에 피연산자 넣음 (숫자로 변환)
     # 연산자인 경우
     else:
         # 순서 지켜줘야 하기 때문에 역순으로 대입
