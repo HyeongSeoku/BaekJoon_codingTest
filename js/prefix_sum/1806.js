@@ -12,11 +12,7 @@ const fs = require("fs");
 // VScode 테스트시 주석 제거
 const readFileSyncAddress = "example.txt";
 
-const input = fs
-  .readFileSync(readFileSyncAddress)
-  .toString()
-  .trim()
-  .split("\n");
+const input = fs.readFileSync(readFileSyncAddress).toString().trim().split(" ");
 
 const [N, S] = input[0].split(" ").map((item) => +item);
 const arr = input[1].split(" ").map((item) => +item);
