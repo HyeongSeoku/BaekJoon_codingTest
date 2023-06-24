@@ -25,13 +25,13 @@ for i in sen:
 
         # ❗️ 연산후 다시 넣어주어야 하는거 잊지 말기
         if i == "+":
-            stack.append(str1+str2)
+            stack.append(str1 + str2)
         elif i == "-":
-            stack.append(str1-str2)
+            stack.append(str1 - str2)
         elif i == "*":
-            stack.append(str1*str2)
+            stack.append(str1 * str2)
         elif i == "/":
-            stack.append(str1/str2)
+            stack.append(str1 / str2)
 
 # 소수점 두자리 까지 출력
 print(f"{stack[0]:.2f}")  # 마지막 남아있는 수 = 정답
